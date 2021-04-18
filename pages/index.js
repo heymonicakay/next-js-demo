@@ -29,7 +29,7 @@ const Home = ({ allPostsData }) => {
           <Link href="https://nextjs.org/learn">this Next.js tutorial</Link> to
           build this site.)
         </p>
-        <Link href="posts/first-post">
+        <Link href="/posts/first-post">
           <a>See Post</a>
         </Link>
       </section>
