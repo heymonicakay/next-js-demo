@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { ProfilePic } from '../components/profile-pic.js'
+import ProfilePic from '../components/profile-pic.js'
 
-export default function Home() {
+const Home = () => {
   return (
     <div className="container">
       <Head>
@@ -214,3 +214,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default Home

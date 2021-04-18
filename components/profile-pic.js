@@ -1,10 +1,15 @@
 import Image from "next/image"
+import utilStyles from "../styles/utils.module.css"
 
-export const ProfilePic = () => (
+const ProfilePic = ({name}) => (
   <Image
-    src="/images/profile-pic.jpeg" // Route of the image file
-    height={144} // Desired size with correct aspect ratio
-    width={144} // Desired size with correct aspect ratio
-    alt="Monica Kay"
+    priority
+    src="/images/profile-pic.jpeg"
+    className={utilStyles.borderCircle}
+    height={144}
+    width={144}
+    alt={name}
   />
 )
+
+export default ProfilePic
